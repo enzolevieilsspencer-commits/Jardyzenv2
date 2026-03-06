@@ -1,0 +1,73 @@
+:root {
+  /* ─── Palette ─────────────────────────────────── */
+  --color-primary:        #2D4A2D;
+  --color-primary-light:  #3D6B3D;
+  --color-primary-dark:   #1E3320;
+  --color-secondary:      #8B9E6E;
+  --color-secondary-light:#A8BC8B;
+  --color-accent:         #C8A96E;
+  --color-accent-light:   #D9BE8E;
+  --color-bg:             #F5F0E8;
+  --color-bg-alt:         #EDE7D8;
+  --color-bg-dark:        #1A1F1A;
+  --color-text:           #1A1A1A;
+  --color-text-muted:     #6B6B6B;
+  --color-white:          #FFFFFF;
+  --color-border:         #D8D0C0;
+  --color-error:          #C62828;
+  --color-success:        #2E7D32;
+
+  /* ─── Typographie ─────────────────────────────── */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, -apple-system, sans-serif;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  2rem;
+  --text-4xl:  2.5rem;
+  --text-5xl:  3.5rem;
+  --text-6xl:  4.5rem;
+
+  --leading-tight:  1.2;
+  --leading-snug:   1.35;
+  --leading-normal: 1.6;
+  --leading-relaxed:1.75;
+
+  /* ─── Espacements ─────────────────────────────── */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ─── Layout ──────────────────────────────────── */
+  --container-max:     1280px;
+  --container-padding: var(--space-6);
+  --nav-height:        72px;
+
+  --border-radius-sm:  4px;
+  --border-radius-md:  8px;
+  --border-radius-lg:  16px;
+  --border-radius-xl:  24px;
+  --border-radius-full:9999px;
+
+  /* ─── Ombres ──────────────────────────────────── */
+  --shadow-sm:  0 1px 3px rgba(0,0,0,.08);
+  --shadow-md:  0 4px 16px rgba(0,0,0,.10);
+  --shadow-lg:  0 8px 32px rgba(0,0,0,.12);
+  --shadow-xl:  0 16px 48px rgba(0,0,0,.16);
+
+  /* ─── Transitions ─────────────────────────────── */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+}
