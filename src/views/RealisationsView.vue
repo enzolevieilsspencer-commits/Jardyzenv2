@@ -60,7 +60,7 @@
                   <div class="portfolio-card__caption-text">
                     <span class="portfolio-card__tag">{{ realisation.categorieLabel }}</span>
                     <h3 class="portfolio-card__title">{{ realisation.titre }}</h3>
-                    <p class="portfolio-card__meta">{{ realisation.lieu }} · {{ realisation.annee }}</p>
+                    <p class="portfolio-card__meta">{{ realisation.lieu }}</p>
                   </div>
                   <div
                     v-if="realisation.srcHover"

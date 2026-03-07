@@ -29,6 +29,7 @@ import FooterSection from '@/components/layout/FooterSection.vue'
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-height) + 1rem);
   -webkit-text-size-adjust: 100%;
 }
 
@@ -96,8 +97,8 @@ select {
 /* ─── Animations scroll reveal ───────────────────── */
 .reveal {
   opacity: 0;
-  transform: translateY(32px);
-  transition: opacity var(--transition-slow), transform var(--transition-slow);
+  transform: translateY(28px);
+  transition: opacity 0.5s var(--ease-out-expo), transform 0.5s var(--ease-out-expo);
 }
 
 .reveal.is-revealed {
@@ -105,26 +106,29 @@ select {
   transform: translateY(0);
 }
 
-.reveal-delay-1 { transition-delay: 100ms; }
-.reveal-delay-2 { transition-delay: 200ms; }
-.reveal-delay-3 { transition-delay: 300ms; }
-.reveal-delay-4 { transition-delay: 400ms; }
-.reveal-delay-5 { transition-delay: 500ms; }
+.reveal-delay-1 { transition-delay: 80ms; }
+.reveal-delay-2 { transition-delay: 160ms; }
+.reveal-delay-3 { transition-delay: 240ms; }
+.reveal-delay-4 { transition-delay: 320ms; }
+.reveal-delay-5 { transition-delay: 400ms; }
 
 /* ─── Transitions de page ─────────────────────────── */
-.page-enter-active,
+.page-enter-active {
+  transition: opacity 0.35s var(--ease-out-expo), transform 0.35s var(--ease-out-expo);
+}
+
 .page-leave-active {
-  transition: opacity 300ms ease, transform 300ms ease;
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 1, 1), transform 0.25s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .page-enter-from {
   opacity: 0;
-  transform: translateY(12px);
+  transform: translateY(10px);
 }
 
 .page-leave-to {
   opacity: 0;
-  transform: translateY(-8px);
+  transform: translateY(-6px);
 }
 
 /* ─── Layout principal ────────────────────────────── */
