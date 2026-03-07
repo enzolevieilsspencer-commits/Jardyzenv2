@@ -149,21 +149,6 @@
             </svg>
             06 85 75 30 60
           </li>
-          <li class="footer__hours">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              aria-hidden="true"
-            >
-              <circle cx="12" cy="12" r="10" />
-              <polyline points="12 6 12 12 16 14" />
-            </svg>
-            Lun–Ven : 8h–18h<br />Sam : 9h–12h
-          </li>
         </ul>
       </address>
     </div>
@@ -171,7 +156,7 @@
     <div class="footer__bottom">
       <div class="container footer__bottom-inner">
         <p class="footer__legal">
-          © {{ currentYear }} Jardyzen — SIRET 000 000 000 00000
+          © {{ currentYear }} Jardyzen — SIRET 952 092 880 000 30
         </p>
 
         <div class="footer__nexten">
@@ -228,11 +213,9 @@
 
         <nav aria-label="Liens légaux">
           <ul class="footer__legal-links" role="list">
-            <li><a href="#" class="footer__legal-link">Mentions légales</a></li>
+            <li><RouterLink to="/mentions-legales" class="footer__legal-link">Mentions légales</RouterLink></li>
             <li>
-              <a href="#" class="footer__legal-link"
-                >Politique de confidentialité</a
-              >
+              <RouterLink to="/politique-confidentialite" class="footer__legal-link">Politique de confidentialité</RouterLink>
             </li>
           </ul>
         </nav>
@@ -356,8 +339,7 @@ const serviceLinks = [
 }
 
 .footer__contact-link,
-.footer__address,
-.footer__hours {
+.footer__address {
   display: flex;
   align-items: flex-start;
   gap: var(--space-3);
@@ -375,8 +357,7 @@ const serviceLinks = [
 }
 
 .footer__contact-link svg,
-.footer__address svg,
-.footer__hours svg {
+.footer__address svg {
   flex-shrink: 0;
   margin-top: 3px;
   opacity: 0.6;

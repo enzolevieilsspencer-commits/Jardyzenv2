@@ -8,7 +8,7 @@ const routes = [
       title: "Jardyzen – Création & Entretien de Jardins dans les Alpilles",
       description:
         "Jardyzen, expert en création de jardins, entretien, terrasses et arrosage automatique dans les Alpilles et en Provence. Devis gratuit sous 48h.",
-      canonical: "https://jardy-paysagiste.fr/",
+      canonical: "https://jardyzen.fr/",
     },
   },
   {
@@ -18,7 +18,7 @@ const routes = [
       title: "Nos Services – Jardyzen Alpilles Provence",
       description:
         "Création de jardins, entretien, terrasses & allées, arrosage automatique, élagage. Découvrez tous nos services de paysagisme dans les Alpilles.",
-      canonical: "https://jardy-paysagiste.fr/services",
+      canonical: "https://jardyzen.fr/services",
     },
   },
   {
@@ -28,7 +28,7 @@ const routes = [
       title: "Nos Réalisations – Jardyzen Alpilles",
       description:
         "Galerie de nos projets réalisés dans les Alpilles et en Provence : jardins contemporains, terrasses, espaces verts. Jardyzen, 15 ans d'expérience.",
-      canonical: "https://jardy-paysagiste.fr/realisations",
+      canonical: "https://jardyzen.fr/realisations",
     },
   },
   {
@@ -38,7 +38,7 @@ const routes = [
       title: "À Propos – Jardyzen Alpilles Provence",
       description:
         "Découvrez l'histoire, les valeurs et l'Jardyzen de Jardyzen, votre expert jardins dans les Alpilles et en Provence depuis 15 ans.",
-      canonical: "https://jardy-paysagiste.fr/a-propos",
+      canonical: "https://jardyzen.fr/a-propos",
     },
   },
   {
@@ -48,7 +48,25 @@ const routes = [
       title: "Contact & Devis Gratuit – Jardyzen Alpilles",
       description:
         "Contactez Jardyzen pour un devis gratuit. Réponse sous 48h pour tous vos projets de jardins, terrasses et entretien dans les Alpilles.",
-      canonical: "https://jardy-paysagiste.fr/contact",
+      canonical: "https://jardyzen.fr/contact",
+    },
+  },
+  {
+    path: "/mentions-legales",
+    component: () => import("../views/MentionsLegalesView.vue"),
+    meta: {
+      title: "Mentions légales – Jardyzen",
+      description: "Mentions légales du site Jardyzen, paysagiste à Paradou et dans les Alpilles.",
+      canonical: "https://jardyzen.fr/mentions-legales",
+    },
+  },
+  {
+    path: "/politique-confidentialite",
+    component: () => import("../views/PolitiqueConfidentialiteView.vue"),
+    meta: {
+      title: "Politique de confidentialité – Jardyzen",
+      description: "Politique de confidentialité et protection des données personnelles – Jardyzen.",
+      canonical: "https://jardyzen.fr/politique-confidentialite",
     },
   },
 ];

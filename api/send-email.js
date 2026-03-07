@@ -5,7 +5,7 @@ const EMAIL_PAYSAGISTE = process.env.EMAIL_PAYSAGISTE
 const EMAIL_EXPEDITEUR = process.env.EMAIL_EXPEDITEUR
 
 const CORS_HEADERS = {
-  'Access-Control-Allow-Origin': 'https://jardy-paysagiste.fr',
+  'Access-Control-Allow-Origin': 'https://jardyzen.fr',
   'Access-Control-Allow-Methods': 'POST, OPTIONS',
   'Access-Control-Allow-Headers': 'Content-Type'
 }
@@ -110,9 +110,8 @@ export default async function handler(req, res) {
           </p>
           <div style="padding: 24px; background: #F5F0E8; border-radius: 12px; margin-bottom: 32px;">
             <h3 style="color: #2D4A2D; font-family: Georgia, serif; margin: 0 0 16px; font-size: 18px;">Nos coordonnées</h3>
-            <p style="margin: 4px 0; color: #6B6B6B; font-size: 14px;">📞 <a href="tel:+33490000000" style="color: #2D4A2D;">04 90 00 00 00</a></p>
-            <p style="margin: 4px 0; color: #6B6B6B; font-size: 14px;">📍 12 Chemin des Oliviers, 13210 Saint-Rémy-de-Provence</p>
-            <p style="margin: 4px 0; color: #6B6B6B; font-size: 14px;">🕐 Lun–Ven 8h–18h · Sam 9h–12h</p>
+            <p style="margin: 4px 0; color: #6B6B6B; font-size: 14px;">📞 <a href="tel:+33685753060" style="color: #2D4A2D;">06 85 75 30 60</a></p>
+            <p style="margin: 4px 0; color: #6B6B6B; font-size: 14px;">📍 Paradou, France</p>
           </div>
           <p style="color: #6B6B6B; font-size: 13px; line-height: 1.6;">
             Vous n'avez pas effectué cette demande ? Ignorez simplement cet email.
@@ -120,7 +119,7 @@ export default async function handler(req, res) {
         </div>
         <div style="background: #1A1F1A; padding: 20px 40px; text-align: center;">
           <p style="color: rgba(255,255,255,.5); font-size: 12px; margin: 0;">
-            © ${new Date().getFullYear()} Jardyzen — 12 Chemin des Oliviers, 13210 Saint-Rémy-de-Provence
+            © ${new Date().getFullYear()} Jardyzen — Paradou, France
           </p>
         </div>
       </div>

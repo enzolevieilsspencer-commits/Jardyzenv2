@@ -183,7 +183,7 @@ const processus = [
   {
     titre: "Livraison & suivi",
     description:
-      "Visite de réception du chantier avec vous, conseils d'entretien personnalisés et suivi à 3 mois pour garantir la reprise des végétaux.",
+      "Visite de réception du chantier avec vous, conseils d'entretien personnalisés et suivi à 3 mois pour la reprise des végétaux.",
   },
 ];
 

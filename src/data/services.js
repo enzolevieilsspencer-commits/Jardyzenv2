@@ -12,7 +12,7 @@ export const services = [
       "Étude personnalisée et plan de plantation",
       "Sélection végétale adaptée à votre sol",
       "Massifs, pelouses, haies et arbustes",
-      "Suivi de chantier et garantie végétaux",
+      "Suivi de chantier",
     ],
     iconAlt: "Icône d'arbre représentant la création de jardins",
     imageUrl: "/img/Création_massif_moulin.jpg",

@@ -243,7 +243,7 @@
           </h2>
           <p class="cta-section__desc">
             Contactez-nous pour une visite gratuite et un devis personnalisé.<br />
-            Réponse sous 48h garantie.
+            Réponse sous 48h.
           </p>
         </div>
         <RouterLink to="/contact" class="btn btn--primary btn--xl">
@@ -304,7 +304,7 @@ const avantages = [
     icon: "refresh",
     titre: "Suivi après livraison",
     description:
-      "Conseils d'entretien, garantie végétaux et service après-vente réactif.",
+      "Conseils d'entretien et service après-vente réactif.",
   },
 ];
 

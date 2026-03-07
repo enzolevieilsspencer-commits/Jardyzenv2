@@ -101,7 +101,7 @@
           Chaque jardin est unique. Contactez-moi pour discuter de votre projet
           et obtenir votre devis personnalisé.
         </p>
-        <RouterLink to="/contact" class="btn btn--primary btn--lg">
+        <RouterLink to="/contact" class="btn btn--primary btn--xl">
           Démarrer mon projet
         </RouterLink>
       </div>
@@ -166,6 +166,10 @@ function setShowAfter(id, showAfter) {
 }
 
 .btn--lg { padding: var(--space-4) var(--space-10); }
+.btn--xl {
+  padding: var(--space-6) var(--space-16);
+  font-size: var(--text-xl);
+}
 
 .page-title {
   font-family: var(--font-display);

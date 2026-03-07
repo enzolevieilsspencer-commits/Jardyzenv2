@@ -112,30 +112,6 @@
       </div>
     </section>
 
-    <!-- ─── Certifications ────────────────────────────── -->
-    <section class="section section--dark" aria-labelledby="certif-titre">
-      <div class="container">
-        <h2 id="certif-titre" class="certif-titre">
-          Certifications & engagements
-        </h2>
-        <ul class="certif-grid" role="list">
-          <li
-            v-for="certif in certifications"
-            :key="certif.titre"
-            class="certif-item reveal"
-          >
-            <div class="certif-item__icon" aria-hidden="true">
-              <AppIcon :name="certif.icon" :size="28" :stroke-width="1.5" />
-            </div>
-            <div>
-              <h3 class="certif-item__title">{{ certif.titre }}</h3>
-              <p class="certif-item__desc">{{ certif.description }}</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
     <!-- ─── CTA ───────────────────────────────────────── -->
     <section class="section cta-section" aria-labelledby="cta-titre">
       <div class="container cta-inner">
@@ -145,7 +121,7 @@
           </h2>
           <p class="cta-desc">Rencontrons-nous autour de votre projet.</p>
         </div>
-        <RouterLink to="/contact" class="btn btn--primary btn--lg">
+        <RouterLink to="/contact" class="btn btn--primary btn--xl">
           Demander un devis gratuit
         </RouterLink>
       </div>
@@ -193,33 +169,6 @@ const valeurs = [
     titre: "Ancrage Alpilles",
     description:
       "Paradou et les Alpilles, c'est notre territoire. Nous connaissons ses sols calcaires, son mistral, ses végétaux. Nous travaillons avec des fournisseurs locaux.",
-  },
-];
-
-const certifications = [
-  {
-    icon: "award",
-    titre: "RGE EcoJardin",
-    description:
-      "Reconnu Garant de l'Environnement pour la gestion écologique des espaces verts.",
-  },
-  {
-    icon: "shield",
-    titre: "Assurance décennale",
-    description:
-      "Garantie décennale sur tous nos travaux de construction (terrasses, structures, arrosage).",
-  },
-  {
-    icon: "sprout",
-    titre: "Garantie végétaux 2 ans",
-    description:
-      "Tous les végétaux que nous plantons sont garantis 2 ans. Si une plante ne reprend pas, on la remplace.",
-  },
-  {
-    icon: "clipboard",
-    titre: "Qualipaysage",
-    description:
-      "Membre du réseau Qualipaysage, gage de professionnalisme et de qualité reconnu nationalement.",
   },
 ];
 
@@ -271,6 +220,10 @@ onBeforeUnmount(() => {
 }
 .btn--lg {
   padding: var(--space-4) var(--space-10);
+}
+.btn--xl {
+  padding: var(--space-6) var(--space-16);
+  font-size: var(--text-xl);
 }
 
 /* ─── Sections ────────────────────────────────────── */
@@ -402,13 +355,15 @@ onBeforeUnmount(() => {
   font-size: var(--text-xl);
   font-weight: 600;
   color: var(--color-white);
-  margin-bottom: var(--space-5);
+  margin-bottom: 0;
 }
 
 .engagement-card__list {
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
+  padding-top: var(--space-12);
+  margin-top: 0;
 }
 
 .engagement-card__item {
@@ -456,7 +411,7 @@ onBeforeUnmount(() => {
   align-items: center;
   justify-content: center;
   color: var(--color-primary);
-  margin-bottom: var(--space-5);
+  margin-bottom: var(--space-8);
   transition:
     background-color var(--transition-base),
     color var(--transition-base);
@@ -471,60 +426,12 @@ onBeforeUnmount(() => {
   font-size: var(--text-xl);
   font-weight: 600;
   color: var(--color-primary);
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-6);
 }
 
 .valeur-card__desc {
   font-size: var(--text-base);
   color: var(--color-text-muted);
-  line-height: var(--leading-relaxed);
-}
-
-/* ─── Certifications ──────────────────────────────── */
-.certif-titre {
-  font-size: var(--text-3xl);
-  color: var(--color-white);
-  text-align: center;
-  margin-bottom: var(--space-12);
-}
-
-.certif-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-6);
-}
-
-.certif-item {
-  display: flex;
-  gap: var(--space-4);
-  padding: var(--space-6);
-  background-color: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: var(--border-radius-lg);
-}
-
-.certif-item__icon {
-  flex-shrink: 0;
-  width: 52px;
-  height: 52px;
-  background-color: rgba(255, 255, 255, 0.08);
-  border-radius: var(--border-radius-lg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-accent);
-}
-
-.certif-item__title {
-  font-size: var(--text-base);
-  font-weight: 600;
-  color: var(--color-white);
-  margin-bottom: var(--space-2);
-}
-
-.certif-item__desc {
-  font-size: var(--text-sm);
-  color: rgba(255, 255, 255, 0.65);
   line-height: var(--leading-relaxed);
 }
 

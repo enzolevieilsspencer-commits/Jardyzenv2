@@ -12,7 +12,7 @@
         <div class="form-wrapper">
           <h2 id="contact-titre" class="form-titre">Votre demande de devis</h2>
           <p class="form-sous-titre">
-            Remplissez ce formulaire et nous vous recontactons sous 48h pour
+            Remplissez ce formulaire et je vous recontacte sous 48h pour
             planifier une visite gratuite.
           </p>
 
@@ -93,7 +93,6 @@
                     aria-required="true"
                     :aria-invalid="!!errors.nom"
                     aria-describedby="contact-nom-error"
-                    placeholder="Jean Dupont"
                     @blur="validateField('nom')"
                   />
                   <p
@@ -123,7 +122,6 @@
                     aria-required="true"
                     :aria-invalid="!!errors.email"
                     aria-describedby="contact-email-error"
-                    placeholder="jean@email.fr"
                     @blur="validateField('email')"
                   />
                   <p
@@ -150,7 +148,6 @@
                     name="telephone"
                     class="form-input"
                     autocomplete="tel"
-                    placeholder="06 00 00 00 00"
                   />
                 </div>
 
@@ -208,7 +205,6 @@
                   aria-required="true"
                   :aria-invalid="!!errors.message"
                   aria-describedby="contact-message-error"
-                  placeholder="Décrivez votre projet : surface, style souhaité, contraintes particulières..."
                   @blur="validateField('message')"
                 ></textarea>
                 <p
@@ -291,10 +287,10 @@
                   <div>
                     <p class="contact-infos__label">Téléphone</p>
                     <a
-                      href="tel:+33490000000"
+                      href="tel:+33685753060"
                       class="contact-infos__value contact-infos__link"
                     >
-                      04 90 00 00 00
+                      06 85 75 30 60
                     </a>
                   </div>
                 </li>
@@ -317,10 +313,10 @@
                   <div>
                     <p class="contact-infos__label">Email</p>
                     <a
-                      href="mailto:contact@jardy-paysagiste.fr"
+                      href="mailto:fredlecoqyzen@gmail.com"
                       class="contact-infos__value contact-infos__link"
                     >
-                      contact@jardy-paysagiste.fr
+                      fredlecoqyzen@gmail.com
                     </a>
                   </div>
                 </li>
@@ -343,29 +339,7 @@
                   <div>
                     <p class="contact-infos__label">Adresse</p>
                     <p class="contact-infos__value">
-                      12 Chemin des Oliviers<br />13210 Saint-Rémy-de-Provence
-                    </p>
-                  </div>
-                </li>
-                <li class="contact-infos__item">
-                  <div class="contact-infos__icon" aria-hidden="true">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <circle cx="12" cy="12" r="10" />
-                      <polyline points="12 6 12 12 16 14" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="contact-infos__label">Horaires</p>
-                    <p class="contact-infos__value">
-                      Lun – Ven : 8h00 – 18h00<br />
-                      Samedi : 9h00 – 12h00
+                      Paradou, France
                     </p>
                   </div>
                 </li>
@@ -405,7 +379,7 @@
     <section class="map-section" aria-label="Notre localisation sur la carte">
       <iframe
         title="Localisation de Jardyzen dans les Alpilles"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=4.7816%2C43.7601%2C4.8816%2C43.8201&layer=mapnik&marker=43.7901%2C4.8316"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=4.74%2C43.70%2C4.84%2C43.75&layer=mapnik&marker=43.7214%2C4.7878"
         width="100%"
         height="400"
         style="border: 0"
@@ -433,7 +407,7 @@ const typesProjet = [
 ];
 
 const engagements = [
-  "Réponse sous 48h garantie",
+  "Réponse sous 48h",
   "Visite et devis 100% gratuits",
   "Sans engagement",
   "Déplacement dans un rayon de 40 km",
@@ -446,6 +420,9 @@ const engagements = [
 .section {
   padding-block: var(--space-24);
 }
+.section.section--light:first-of-type {
+  padding-top: var(--space-2);
+}
 .section--light {
   background-color: var(--color-bg);
 }
@@ -454,7 +431,7 @@ const engagements = [
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-16);
+  gap: var(--space-4);
   align-items: start;
 }
 
@@ -470,7 +447,15 @@ const engagements = [
   font-size: var(--text-base);
   color: var(--color-text-muted);
   line-height: var(--leading-relaxed);
-  margin-bottom: var(--space-8);
+  margin-bottom: var(--space-6);
+}
+
+.form-wrapper {
+  background-color: var(--color-white);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius-xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-md);
 }
 
 .contact-form {
@@ -513,6 +498,12 @@ const engagements = [
     border-color var(--transition-base),
     box-shadow var(--transition-base);
   width: 100%;
+  min-height: 48px;
+}
+
+.form-input::placeholder {
+  color: var(--color-text-muted);
+  opacity: 0.8;
 }
 
 .form-input:focus {
@@ -540,7 +531,10 @@ const engagements = [
 
 .form-textarea {
   resize: vertical;
-  min-height: 120px;
+  min-height: 140px;
+  padding: var(--space-4);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius-md);
 }
 
 .form-error {
@@ -710,13 +704,16 @@ const engagements = [
   font-size: var(--text-lg);
   font-weight: 600;
   color: var(--color-white);
-  margin-bottom: var(--space-4);
+  margin-bottom: 0;
+  padding-bottom: var(--space-2);
 }
 
 .engagements__list {
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
+  padding-top: var(--space-8);
+  margin-top: 0;
 }
 
 .engagements__item {
