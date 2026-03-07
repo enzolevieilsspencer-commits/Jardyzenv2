@@ -6,9 +6,12 @@
         src="/img/anthony-fomin-Apips1tJsXo-unsplash.jpg"
         alt=""
         class="hero__bg"
+        width="1920"
+        height="1280"
         aria-hidden="true"
         loading="eager"
         fetchpriority="high"
+        decoding="async"
       />
       <div class="hero__overlay" aria-hidden="true"></div>
       <div class="container hero__content">
@@ -201,6 +204,7 @@
                   :width="realisation.width"
                   :height="realisation.height"
                   loading="lazy"
+                  decoding="async"
                   :class="[
                     'realisation-card__img',
                     {

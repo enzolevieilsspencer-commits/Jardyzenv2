@@ -35,6 +35,7 @@
                     :width="realisation.width"
                     :height="realisation.height"
                     loading="lazy"
+                    decoding="async"
                     class="portfolio-card__img"
                   />
                   <img
@@ -42,6 +43,8 @@
                     :alt="realisation.altHover || realisation.alt"
                     :width="realisation.width"
                     :height="realisation.height"
+                    loading="lazy"
+                    decoding="async"
                     class="portfolio-card__img portfolio-card__img--hover"
                     :aria-hidden="!showAfterIds[realisation.id]"
                   />
@@ -53,6 +56,7 @@
                     :width="realisation.width"
                     :height="realisation.height"
                     loading="lazy"
+                    decoding="async"
                     class="portfolio-card__img"
                   />
                 </div>

@@ -34,6 +34,7 @@
                   width="800"
                   height="600"
                   loading="lazy"
+                  decoding="async"
                   class="service-item__img"
                 />
               </figure>

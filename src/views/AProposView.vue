@@ -46,11 +46,12 @@
         <div class="histoire-right reveal reveal-delay-2">
           <figure class="histoire-visual">
             <img
-              src="/img/Créeation_potager.jpg"
+              src="/img/Création_potager.jpg"
               alt="Création d'un potager en carrés surélevés, réalisation Jardyzen"
               width="800"
               height="600"
               loading="lazy"
+              decoding="async"
               class="histoire-img"
             />
           </figure>
