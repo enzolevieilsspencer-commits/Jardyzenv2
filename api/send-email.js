@@ -139,7 +139,7 @@ export default async function handler(req, res) {
     await Promise.all([
       resend.emails.send({
         from: `Jardyzen <${EMAIL_EXPEDITEUR}>`,
-        to: EMAIL_PAYSAGISTE,
+        to: [...new Set([EMAIL_PAYSAGISTE, EMAIL_REPLY_TO].filter(Boolean))],
         replyTo: email,
         subject: `Nouvelle demande de devis — ${nom.trim()} (${type_projet.trim()})`,
         html: htmlNotification
