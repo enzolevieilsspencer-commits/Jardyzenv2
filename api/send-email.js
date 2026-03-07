@@ -3,6 +3,8 @@ import { Resend } from 'resend'
 const RESEND_API_KEY = process.env.RESEND_API_KEY
 const EMAIL_PAYSAGISTE = process.env.EMAIL_PAYSAGISTE
 const EMAIL_EXPEDITEUR = process.env.EMAIL_EXPEDITEUR
+// Reply-To for client-facing email: when client replies to the confirmation, it goes to the landscaper
+const EMAIL_REPLY_TO = process.env.EMAIL_REPLY_TO || process.env.EMAIL_PAYSAGISTE
 
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': 'https://jardyzen.fr',
@@ -108,14 +110,15 @@ export default async function handler(req, res) {
             Bonjour <strong>${nom.trim()}</strong>,
           </p>
           <p style="color: #1A1A1A; font-size: 16px; line-height: 1.7; margin-bottom: 16px;">
-            Merci pour votre intérêt ! Nous avons bien reçu votre demande concernant : <strong>${type_projet.trim()}</strong>.
+            Merci pour votre intérêt ! Votre demande concernant <strong>${type_projet.trim()}</strong> a bien été transmise à Jardyzen.
           </p>
           <p style="color: #1A1A1A; font-size: 16px; line-height: 1.7; margin-bottom: 32px;">
-            Jardyzen vous contactera dans les <strong>48 heures</strong> pour planifier une visite gratuite et sans engagement sur votre propriété.
+            Vous serez recontacté dans les <strong>48 heures</strong> pour planifier une visite gratuite et sans engagement sur votre propriété.
           </p>
           <div style="padding: 24px; background: #F5F0E8; border-radius: 12px; margin-bottom: 32px;">
-            <h3 style="color: #2D4A2D; font-family: Georgia, serif; margin: 0 0 16px; font-size: 18px;">Nos coordonnées</h3>
+            <h3 style="color: #2D4A2D; font-family: Georgia, serif; margin: 0 0 16px; font-size: 18px;">Coordonnées Jardyzen</h3>
             <p style="margin: 4px 0; color: #6B6B6B; font-size: 14px;">📞 <a href="tel:+33685753060" style="color: #2D4A2D;">06 85 75 30 60</a></p>
+            <p style="margin: 4px 0; color: #6B6B6B; font-size: 14px;">✉️ <a href="mailto:${EMAIL_REPLY_TO}" style="color: #2D4A2D;">${EMAIL_REPLY_TO}</a></p>
             <p style="margin: 4px 0; color: #6B6B6B; font-size: 14px;">📍 Paradou, France</p>
           </div>
           <p style="color: #6B6B6B; font-size: 13px; line-height: 1.6;">
@@ -144,6 +147,7 @@ export default async function handler(req, res) {
       resend.emails.send({
         from: `Jardyzen <${EMAIL_EXPEDITEUR}>`,
         to: email,
+        replyTo: EMAIL_REPLY_TO,
         subject: 'Votre demande a bien été reçue ✅ — Jardyzen',
         html: htmlConfirmation
       })
