@@ -6,7 +6,7 @@ export const realisations = [
     categorieLabel: 'Jardin',
     description: 'Préparation du terrain, nivellement et pose de gazon en plaques autour d\'un olivier existant pour un rendu immédiat.',
     lieu: 'Paradou',
-    src: '/img/gazon.jpg',
+    src: '/img/20260225_174818.jpg',
     srcLarge: '/img/gazon.jpg',
     srcHover: '/img/gazon.jpg',
     alt: 'Pose de gazon en plaques — avant',

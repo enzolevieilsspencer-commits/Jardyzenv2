@@ -196,7 +196,7 @@
             <article>
               <figure class="realisation-card__figure">
                 <img
-                  :src="realisation.src"
+                  :src="index === 0 ? '/img/gazon.jpg' : realisation.src"
                   :alt="realisation.alt"
                   :width="realisation.width"
                   :height="realisation.height"
