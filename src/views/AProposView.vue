@@ -46,8 +46,8 @@
         <div class="histoire-right reveal reveal-delay-2">
           <figure class="histoire-visual">
             <img
-              src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80"
-              alt="Mas provençal avec jardin paysagé dans les Alpilles, réalisé par Jardyzen"
+              src="/img/Créeation_potager.jpg"
+              alt="Création d'un potager en carrés surélevés, réalisation Jardyzen"
               width="800"
               height="600"
               loading="lazy"
