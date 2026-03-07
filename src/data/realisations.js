@@ -100,7 +100,7 @@ export const realisations = [
     id: 8,
     titre: 'Élagage olivier',
     categorie: 'elagage',
-    categorieLabel: 'Élagage',
+    categorieLabel: 'Taille d\'olivier',
     description: 'Taille et élagage d\'un olivier aux Baux-de-Provence.',
     lieu: 'Les Baux-de-Provence',
     src: '/img/taille_olivier_baux_de_provence.jpeg',
@@ -173,5 +173,5 @@ export const categories = [
   { id: 'terrasse', label: 'Terrasses & allées' },
   { id: 'entretien', label: 'Entretien' },
   { id: 'arrosage', label: 'Arrosage' },
-  { id: 'elagage', label: 'Élagage' }
+  { id: 'elagage', label: 'Taille d\'olivier' }
 ]
