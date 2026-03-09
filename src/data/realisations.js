@@ -22,7 +22,7 @@ export const realisations = [
     categorieLabel: "Clôture",
     description:
       "Mise en place d'une clôture agricole avec portail pour sécuriser un terrain planté d'oliviers.",
-    lieu: "Sénas",
+    lieu: "Saint-Rémy-de-Provence",
     src: "/img/barriere.jpg",
     srcLarge: "/img/barriere.jpg",
     alt: "Clôture agricole et portail installés le long d'un champ d'oliviers",
@@ -36,7 +36,7 @@ export const realisations = [
     categorieLabel: "Jardin",
     description:
       "Terrassement, bordures bois et mise en place du sable pour un terrain de pétanque aux normes, intégré au paysage.",
-    lieu: "Saint-Rémy-de-Provence",
+    lieu: "Sénas",
     src: "/img/petanque.jpg",
     srcLarge: "/img/petanque.jpg",
     alt: "Terrain de pétanque flambant neuf au milieu d'un terrain avec vue sur les Alpilles",
